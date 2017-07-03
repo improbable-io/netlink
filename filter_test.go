@@ -8,6 +8,14 @@ import (
 	"testing"
 )
 
+// Constants used in TcU32Sel.Flags.
+const (
+	TC_U32_TERMINAL  = nl.TC_U32_TERMINAL
+	TC_U32_OFFSET    = nl.TC_U32_OFFSET
+	TC_U32_VAROFFSET = nl.TC_U32_VAROFFSET
+	TC_U32_EAT       = nl.TC_U32_EAT
+)
+
 func TestFilterAddDel(t *testing.T) {
 	tearDown := setUpNetlinkTest(t)
 	defer tearDown()
